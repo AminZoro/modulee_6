@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 function AddCatForm({ onAddCat }) {
-  // State for controlled inputs
   const [name, setName] = useState("");
   const [latinName, setLatinName] = useState("");
   const [image, setImage] = useState("");
@@ -62,9 +61,9 @@ function AddCatForm({ onAddCat }) {
     </div>
   );
 }
-// For exercise 5 enter
-// name: Lynx
-// latin name: Lynx lynx
-// image image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Lynx_Nationalpark_Bayerischer_Wald_01.jpg/1200px-Lynx_Nationalpark_Bayerischer_Wald_01.jpg
+// exercise 5
+// name: Jungle cat
+// latin name: Felis chaus
+// image https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Jungle_Cat_on_tree_at_Sundarban%2C_West_Bengal%2C_India.jpg/250px-Jungle_Cat_on_tree_at_Sundarban%2C_West_Bengal%2C_India.jpg
 
 export default AddCatForm;
