@@ -1,21 +1,17 @@
 import { useState } from "react";
 
-// import child components
 import NumberButton from "./numberButton";
 import OperatorButton from "./operatorButton";
 
-// Calculator component
 function Calculator() {
   const [num1, setNum1] = useState("");
   const [num2, setNum2] = useState("");
   const [operator, setOperator] = useState(null);
   const [result, setResult] = useState("");
 
-  // calculator button values array
   const numeralArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
   const operatorsArray = ["+", "-", "/", "*", "="];
 
-  // concat and set numbers clicked
   function numberClicked(num) {
     if (operator === null) {
       setNum1((prevNum1) => prevNum1 + num);
@@ -26,16 +22,14 @@ function Calculator() {
 
   // operator buttons
   function operatorClicked(op) {
-    // check if = btn clicked
     if (op === "=") {
       calculateResult();
     } else {
-      // set operator
       setOperator(op);
     }
   }
 
-  // calculate result
+  // result
   function calculateResult() {
     const a = parseFloat(num1);
     const b = parseFloat(num2);
@@ -57,11 +51,10 @@ function Calculator() {
       default:
         result = "Error";
     }
-    // set result state
+
     setResult(result);
   }
 
-  // clear display and reset state to ""
   function clearAll() {
     setNum1("");
     setNum2("");

@@ -8,13 +8,10 @@ function AddCatForm({ onAddCat }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Create a new cat object
     const newCat = { name, latinName, image };
 
-    // Pass it to parent component
     onAddCat(newCat);
 
-    // Reset form fields
     setName("");
     setLatinName("");
     setImage("");

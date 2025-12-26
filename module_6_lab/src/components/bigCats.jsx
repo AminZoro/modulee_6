@@ -1,8 +1,7 @@
-// import react and state
 import { useState } from "react";
 import AddCatForm from "./AddCatForm";
 
-// import images
+// images
 import cheetah from "../assets/cheetah.jpg";
 import cougar from "../assets/cougar.jpg";
 import jaguar from "../assets/jaguar.jpg";
@@ -70,14 +69,12 @@ function BigCats({ question }) {
   };
   return (
     <div className="cats-container">
-      {/* Header */}
       <div className="cats-header">
         <h2 className="cats-title">
           {question ? "Big Cats Manager" : "Big Cats"}
         </h2>
       </div>
 
-      {/* Cats List */}
       <div className="cats-list">
         {currentCats.map((cat, index) => (
           <div key={index} className="cat-item">
@@ -95,7 +92,6 @@ function BigCats({ question }) {
         ))}
       </div>
 
-      {/* Controls - Only show when question is true */}
       {question && (
         <div className="cats-controls">
           <div className="controls-row">
@@ -113,7 +109,6 @@ function BigCats({ question }) {
             </button>
           </div>
 
-          {/* Add Cat Form */}
           <div className="add-cat-form">
             <AddCatForm onAddCat={handleAddCat} />
           </div>
