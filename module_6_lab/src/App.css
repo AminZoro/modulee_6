@@ -1,0 +1,123 @@
+
+.cats-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.cats-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cat-item {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.delete-btn {
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.controls-row {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.control-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-cat-form {
+  margin-top: 30px;
+}
+.calculator {
+  width: 300px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.calc-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.calc-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.calc-header p {
+  margin: 5px 0 0 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.calc-display {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.calc-numbers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.calc-result {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.calc-result div:first-child {
+  font-size: 14px;
+  color: #666;
+}
+
+.result {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0066cc;
+  font-family: monospace;
+}
+
+.calc-buttons .button-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.calc-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calc-buttons .clear {
+  width: 100%;
+  padding: 12px;
+  background: #dc3545;
+  margin-top: 10px;
+}
